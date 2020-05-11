@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  body{
+  margin: 0;
+}
+ul{
+  list-style-type: none;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #6A706E;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+}
+li{
+  display: inline;
+  float: left;
+}
+li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 50px;
+  color: #C9EDDC;
+  font-weight: bold;
+  font-size: large;
+}
+li:hover{
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+   <div class="navbar">
+  <ul>
+  <li><a href="convincehome.html"> Home </a></li>
+  <li><a href="convinceabout.html"> About </a></li>
+</ul>
+  </div>
+</body>
+</html>

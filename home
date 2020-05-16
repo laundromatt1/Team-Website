@@ -6,6 +6,233 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+<style>
+body{
+  margin: 0;
+  background-color: #6A706E;
+}
+ul{
+  list-style-type: none;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #6A706E;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+}
+li{
+  display: inline;
+  float: left;
+}
+li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 50px;
+  color: #9DB4C0;
+  font-weight: bold;
+  font-size: large;
+}
+li:hover{
+  background-color: teal;
+}
+div.logo{
+  position: absolute;
+  top: 12.4px;
+}
+div.container-fluid{
+  border: 3px solid #3A606E;
+  text-align: center;
+  background-color: #C9EDDC;
+  width: 99.7%;
+  right: ;
+  color: #6A706E;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  top: 31px
+}
+.accordion {
+  background-color: #6A706E;
+  color: white;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  position: absolute;
+  top: 131px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: blue;
+  overflow: hidden;
+}
+table{
+  position: relative;
+  top: 257px;
+  right: -210px
+}
+table, th, td {
+  border: 3px solid #3A606E;
+  background-color: #C9EDDC;
+}
+div.store{
+  font-size: 50px;
+  position: absolute;
+  right: 875px;
+  top: 120px;
+  color: #3A606E;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #3A606E;
+  padding: 10px;
+  position: absolute;
+  top: 415px;
+  right: 675px
+}
+.grid-item {
+  background-color: #6A706E;
+  border: 1px solid #3A606E;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+div.riders{
+  font-size: 50px;
+  position: absolute;
+  right: 860px;
+  top: 275px;
+  color: #3A606E;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #C9EDDC;
+  position: absolute;
+  top: 200px;
+  left: 20px;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: teal;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  top: 800px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
 <body>
    <div class="navbar">
   <ul>

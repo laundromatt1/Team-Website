@@ -5,37 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <style>
-  body{
-  margin: 0;
-}
-ul{
-  list-style-type: none;
-  width: 100%;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  background-color: #6A706E;
-  position: fixed;
-  top: 0px;
-  z-index: 10;
-}
-li{
-  display: inline;
-  float: left;
-}
-li a {
-  display: block;
-  text-decoration: none;
-  padding: 5px 50px;
-  color: #9DB4C0;
-  font-weight: bold;
-  font-size: large;
-}
-li:hover{
-  background-color: yellow;
-}
-</style>
 </head>
 <body>
    <div class="navbar">
@@ -44,5 +13,135 @@ li:hover{
   <li><a href="convinceabout.html"> About </a></li>
 </ul>
   </div>
+  <div class="container-fluid">
+    <p> Odysea </p>
+  </div>
+  <div class="logo">
+ <img src="https://docs.google.com/drawings/d/e/2PACX-1vRy4GwrWhjE5cSmkEkfAc52KWn5elQDmMmHlmIujZgi7FGenoCDuOgDb6jB1bskQeYJBneE5u1_8f4d/pub?w=960&amp;h=720" width="300px"> </div>
+    <button class="accordion">Section 1</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, queis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+  <div class="store">
+    <h2> Store </h2>
+  </div>
+  <div class="table">
+    <table style="width:75%">
+  <tr>
+    <th>Boards</th>
+    <th>Size</th> 
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Beater</td>
+    <td>4 feet</td>
+    <td>$200</td>
+  </tr>
+  <tr>
+    <td>Skipper</td>
+    <td>5 feet 4 inches</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+</table>
+    <div class="riders">
+      <h2> Riders </h2>
+    </div>
+    <div class="grid-container">
+  <div class="grid-item">Jamie O'brien</div>
+  <div class="grid-item">Blair Conklin</div>
+  <div class="grid-item">Kalani Rob</div>  
+  <div class="grid-item">Ben Gravy</div>
+ 
+</div>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Sales</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Locations</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>Sale</h3>
+  <p>Sales</p>
+</div>
+
+<div id="Locations" class="tabcontent">
+  <h3>Locations</h3>
+  <p>San Diego</p> 
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://cdn.shopify.com/s/files/1/1154/7998/products/BO54PROJOB_HP20_TB_1024x1024.jpg?v=1580944498" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://cdn.shopify.com/s/files/1/1154/7998/products/ODY60-Q_BLU9_TB_1_1024x1024.jpg?v=1579111760" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://images.evo.com/imgp/enlarge/161024/633576/catch-surf-odysea-54-special-tri-harry-bryant-surfboard-.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+  <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  
 </body>
 </html>
